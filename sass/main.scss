@@ -6,7 +6,7 @@ $openSans: 'Open Sans', sans-serif;
 
 body{
     font-family: $openSans;
-    font-weight: 400px;
+    font-weight: 400 ;
    
 }
 
@@ -27,7 +27,6 @@ body{
             font-family: $relaway;
             color: white;
             margin: 0;
-           
             font-weight: 700px;
         }
         p{
@@ -141,18 +140,158 @@ body{
     body{
         background-color: white;
         margin: 0;
+        
     }
 
     .pre-footer{
         background-color: $desaturatedBlue;
-        display: flex;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        height: 30vh;
+        padding: 40px 50px 0 50px;
+        
+       
+        
+    }
+    .content-wrap{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        /* padding-top: 3%;
+        padding-right: 100px; */
+        /* padding: 5% 100px 3% 0; */
+        
+        text-align: justify;
+
+        h3{
+            font-family: $relaway;
+            font-weight: 700;
+        }
         
     }
 
+
+
+    form{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding: 40px 0 0 130px;
+        display: flex;
+        flex-direction: column ;
+       
+        height: 70%;
+        width: 80%;
+        
+    }
+
+    #email-field{
+        height: 40px;
+        width: 85%;
+        margin-bottom: 10px;
+        border: 0;
+        border-radius: 5px;
+        padding-left: 10px;
+        
+    }
+
+    #submit{
+        font-family: $relaway;
+        font-weight: 700px;
+        height: 40px;
+        background-color: $buttomColor;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        width: 40%;
+        border-radius: 5px;
+    }
 
 
     footer{
         background-color: $veryDarkBlue;
+        padding: 0 50px;
+        display:grid;
+        color: white;
+        grid-template-columns: 1fr 1fr 1fr 1fr 120px;
+        grid-template-rows: 120px 250px;
         
     }
+
+    .email h5 {
+        margin: 0;
+    }
+
+    .phone-number, .email{
+        display: flex;
+        align-items: center;
+    }
+
+    .number,.direction{
+        padding-left: 20px;
+    }
+
+
+    .red{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin:0 10px 0 10px; 
+    }
+
+
+
+
+    .logo-footer{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: flex-end;
+               
+    }
+    .phone-email{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .bloque1{
+        grid-column: 2/3;;
+        grid-row: 2/3;
+        justify-self: center;
+        
+        
+    }
+    .bloque2{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        justify-self: center;
+       
+           
+    }
+    
+    .redes{
+        grid-column: 4/5;
+        grid-row: 2/3;
+        justify-self: center;
+        margin-top: 22px;
+        
+               
+    }
+
+
+    .bloque1 h5 , .bloque2 h5{
+        margin: 22px 0 10px 0;
+
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
 }
