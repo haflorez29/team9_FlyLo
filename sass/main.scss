@@ -136,3 +136,23 @@ body{
 }
 
 
+
+@media screen and (max-width:1440px){
+    body{
+        background-color: white;
+        margin: 0;
+    }
+
+    .pre-footer{
+        background-color: $desaturatedBlue;
+        display: flex;
+        
+    }
+
+
+
+    footer{
+        background-color: $veryDarkBlue;
+        
+    }
+}

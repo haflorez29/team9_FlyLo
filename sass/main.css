@@ -102,4 +102,20 @@ body {
     height: 20px;
   }
 }
+
+@media screen and (max-width: 1440px) {
+  body {
+    background-color: white;
+    margin: 0;
+  }
+  .pre-footer {
+    background-color: #585989;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer {
+    background-color: #070439;
+  }
+}
 /*# sourceMappingURL=main.css.map */
