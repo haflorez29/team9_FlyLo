@@ -1,0 +1,138 @@
+$veryDarkBlue: hsl(243, 87%, 12%);
+$desaturatedBlue: hsl(238, 22%, 44%);
+$buttomColor: hsl(224, 93%, 58%);
+$relaway: 'Raleway', sans-serif;
+$openSans: 'Open Sans', sans-serif;
+
+body{
+    font-family: $openSans;
+    font-weight: 400px;
+   
+}
+
+
+@media screen and (max-width:375px){
+
+    body{
+        background-color:white;
+        margin: 0;
+    }
+
+    .pre-footer{
+        background-color: $desaturatedBlue;
+        padding: 50px 35px;
+        
+        h3{
+            text-align: center;
+            font-family: $relaway;
+            color: white;
+            margin: 0;
+           
+            font-weight: 700px;
+        }
+        p{
+            text-align: center;
+            color: white;
+            font-weight: 400px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        #email-field, #submit{
+           
+            height: 40px;
+            font-family: $relaway;
+            border: 0;
+            border-radius: 2px;
+            
+            
+        }
+
+        #email-field{
+            padding: 0 0 0 15px;
+            width: 87%;
+        }
+
+        #submit{
+            width: 92%;
+            margin-top: 10px;
+            background-color: $buttomColor;
+            color: white;
+            font-family: $relaway;
+            font-weight: bold
+            
+        }
+    }
+
+
+    footer{
+        background-color: $veryDarkBlue;
+        color: white;
+        font-family: $openSans;
+        font-weight: 400px;
+        padding: 40px 35px;
+        height: 550px;
+
+        .logo-footer{
+            width: 150px;
+            margin-bottom: 25px;
+        }
+
+        .phone-number,.email{
+            display: flex;
+            height: 30px;
+            align-items: center;
+                      
+
+        }
+
+        .phone-svg, .correo-svg{
+            height: 45%;
+        }   
+
+        .number, .direction{
+            
+            margin: 0 0 0 20px;
+        }
+
+        .bloque1{
+            padding-top: 20px;
+        }
+
+        .bloque2{
+            margin: 50px 0;
+        }
+
+
+        .redes{
+            display: flex;
+            justify-content: center;
+            
+
+        }
+
+        .red{
+            margin: 0 13px;
+            width: 20px;
+            height: 20px;
+            
+        }
+
+
+        
+        
+        
+
+       
+        
+    }
+
+
+}
+
+
