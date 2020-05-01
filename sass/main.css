@@ -183,7 +183,7 @@ body {
   }
   footer {
     background-color: #070439;
-    padding: 0 50px;
+    padding: 0 5%;
     display: -ms-grid;
     display: grid;
     color: white;
