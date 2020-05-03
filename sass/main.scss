@@ -1,194 +1,473 @@
 $mobile: 375px;
 $Desktop: 1440px;
 //Primary
-$Very_Dark_Blue: hsl(243, 87%, 12%);
-$Desaturated_Blue: hsl(238, 22%, 44%);
+$very_Dark_Blue: hsl(243, 87%, 12%);
+$desaturated_Blue: hsl(238, 22%, 44%);
 //Accent
-$Bright_Blue: hsl(224, 93%, 58%);
-$Moderate_Cyan: hsl(170, 45%, 43%);
+$bright_Blue: hsl(224, 93%, 58%);
+$moderate_Cyan: hsl(170, 45%, 43%);
 //Neutral
-$Light_Grayish_Blue: hsl(240, 75%, 98%);
+$light_Grayish_Blue: hsl(240, 75%, 98%);
 $light_Gray: hsl(0, 0%, 75%);
-// Typography
-// Headings, Call-to-actions, Header Navigation
-// $Family: Raleway;
-// $Weights: 400, 700;
-// Body
-// $font-family: Open_sans;
-// $Weights: 400;
+$veryDarkBlue: hsl(243, 87%, 12%);
+$desaturatedBlue: hsl(238, 22%, 44%);
+$buttomColor: hsl(224, 93%, 58%);
+$relaway: "Raleway", sans-serif;
+$openSans: "Open Sans", sans-serif;
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+  font-family: $openSans;
   margin: 0;
-  font-size: 55%;
-  #header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5% 8% 5% 8%;
-    box-sizing: border-box;
-    #logo {
-    width: 20%;
+  font-size: 60%;
+  
+    #header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5% 8% 5% 8%;
+      box-sizing: border-box;
+      background-color: white;
+      #logo {
+        width: 20%;
+      }
+      #nav {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        .nav-item {
+          text-decoration: none;
+          color: black;
+        }
+      }
     }
-    #nav {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    .nav-item {
-      text-decoration: none;
-      color: black;
+    #Features {
+      width: 70vw;
+      padding: 5% 8% 5% 8%;
     }
-    }    
-  }
-    #features {
-     width: 70vw;
-     padding: 5% 8% 5% 8%;
-     }
-    #first_text, h3 {
-     text-align: center;
-     padding: 5% 8% 5% 8%;
-     }
+    #first_text,
+    h3 {
+      text-align: center;
+      padding: 5% 8% 5% 8%;
+      text-align: justify;
+    }
     #form {
-     display: flex;
-     flex-direction: column;
-     padding: 5% 8% 5% 8%;
+      display: flex;
+      flex-direction: column;
+      padding: 5% 8% 5% 8%;
       .label {
         display: flex;
         justify-content: center;
         .border {
-          width: 60%;
-          margin: 1%;
-          }
+          width: 90%;
+          margin: 1%;          
+          border: 0;
+          border-radius: 2px;
+        }
         #email {
-          border: 0.5px solid $Very_Dark_Blue ;
+          border: 0.5px solid $very_Dark_Blue;
           border-radius: 3px;
-          padding: 3px 0px 3px 6px;
-          height: 1em;
-          }
+          padding: 3px 0px 3px 5px;
+          height: 2.3em;   
+          box-sizing: border-box;       
+        }
         #button {
-          height: 1.6em;
-          border: 0.5px solid $Very_Dark_Blue ;
+          height: 2.3em;          
           border-radius: 3px;
-          background-color: $Bright_Blue;
+          background-color: $bright_Blue;
           color: white;
-          }
+          font-family: $relaway;
+          font-weight: 700;
+          font-size: 0.8rem;
+        }
       }
     }
-  
-  .team {
-    background-color: $Light_Grayish_Blue;
-    padding: 5% 8% 5% 8%;  
-     #team {
-      width: 70vw;
-      padding: 5% 8% 5% 8%;
-      }
-     .coment {
-     border: 1px solid $light_Gray;
-     border-radius: 4px;
-     box-shadow: 1px 1px 45px 3px $light_Gray;
-     padding: 5% 8% 5% 8%;
-     margin: 10%;
-     .flex_row {
-      display: flex;
-      align-items: center;
-      #coment {
-       border-radius: 50%;
-       height: 15%;
-       width: 15%;
-       margin: 4%;
-      }
-      .aling_center {
-        font-weight: bold;
-       }
+
+    .team {
+      // background-image: url("../images/bg-curve-mobile.svg");
+      // background-repeat: no-repeat;
+      background-color: $light_Grayish_Blue;
+      // background:linear-gradient( $light_Grayish_Blue 100%, rgba(0, 0, 0, 0.5)100%),url("../images/bg-curve-mobile.svg");
+      // padding: 5% 8% 5% 8%;
       
-     }
+      #team {
+        width: 70vw;
+        padding: 5% 8% 5% 8%;
+      }
+      .coment {
+        border: 1px solid $light_Gray;
+        border-radius: 4px;
+        box-shadow: 1px 1px 45px 3px $light_Gray;
+        padding: 5% 8% 5% 8%;
+        margin: 10%;
+        .flex_row {
+          display: flex;
+          align-items: center;
+          #coment {
+            border-radius: 50%;
+            height: 15%;
+            width: 15%;
+            margin: 4%;
+          }
+          .aling_center {
+            font-weight: bold;
+          }
+        }
+      }
     }
-  } 
-  .curve {
-   width: 100%;
-   margin: 0;
-   padding: 0;
+    .link_container {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid $moderate_Cyan;
+      width: 50%;
+      margin: auto;
+      a {
+        text-decoration: none;
+        color: $moderate_Cyan;
+      }
+    }
+
+    #bg_curva {
+      max-width: 100%;
+      height: 80px;
+      // background-image: url("../images/bg-curve-mobile.svg");
+      // background-repeat: no-repeat;
+    }
+    #h1, .h3 {
+      font-family: $relaway;
+      font-weight: 700;
+    }
+}
+  .pre-footer {
+    background-color: $desaturatedBlue;
+    padding: 50px 35px;
+
+    h3 {
+      text-align: center;
+      font-family: $relaway;
+      color: white;
+      margin: 0;
+      font-weight: 700px;
+    }
+    p {
+      text-align: center;
+      color: white;
+      font-weight: 400px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      align-items: center;
+    }
+
+    #email-field,
+    #submit {
+      height: 40px;
+      font-family: $relaway;
+      border: 0;
+      border-radius: 2px;
+    }
+
+    #email-field {
+      padding: 0 0 0 15px;
+      width: 87%;
+      height: 2.3em;   
+      box-sizing: border-box;
+    }   
   }
-}
-.link_container {
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid $Moderate_Cyan;
-  width: 50%;
-  margin: auto;
-  a {
-    text-decoration: none;
-    color: $Moderate_Cyan;
+  #submit {
+    width: 87%;
+    margin-top: 10px;
+    background-color: $buttomColor;
+    color: white;
+    font-family: $relaway;
+    font-weight: bold;
+    height: 2.1em;
   }
+
+  footer {
+    background-color: $veryDarkBlue;
+    color: white;
+    font-family: $openSans;
+    font-weight: 400px;
+    padding: 40px 35px;
+    height: 550px;
+
+    .logo-footer {
+      width: 150px;
+      margin-bottom: 25px;
+    }
+
+    .phone-number,
+    .email {
+      display: flex;
+      height: 30px;
+      align-items: center;
+    }
+
+    .phone-svg,
+    .correo-svg {
+      height: 45%;
+    }
+
+    .number,
+    .direction {
+      margin: 0 0 0 20px;
+    }
+
+    .bloque1 {
+      padding-top: 20px;
+    }
+
+    .bloque2 {
+      margin: 50px 0;
+    }
+
+    .redes {
+      display: flex;
+      justify-content: center;
+    }
+
+    .red {
+      margin: 0 13px;
+      width: 20px;
+      height: 20px;
+    }
+   
+  }
+
+  .prueba {
+    display: flex;
+    flex-direction: column;
+  }
+  .curva-mobile{
+    display: block;
+    
+
+}
+.curva{
+    display: none;
 }
 
-#bg_curva {
-  max-width: 100%;
-  height: 80px;
-  // background-image: url("../images/bg-curve-mobile.svg");
-  // background-repeat: no-repeat;
-}
 
-
-@media (min-width: $mobile) {
+@media screen and (min-width: 376px) {
   body {
     font-size: 100%;
-    #section_1  {
+    background-color: white;
+    margin: 0;
+    
+    #section_1 {
       display: flex;
       flex-direction: row;
       height: 90vh;
       width: 90vw;
-        #form {
+
+      #form {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        }
-        #email {
+      }
+
+      #email {
         width: 20vw;
-        }
-        #button {
+        
+      }
+
+      #button {
         width: 17vw;
-         }
-     }
-    #features {
-      order: 2;
-      width: 50%;
-      height:80%;
+      }
     }
+
+    #Features {
+      order: 2;
+      width: 45%;
+      height: 45vw;
+      align-self: center;
+    }
+
     #section_2 {
       order: 1;
-      width: 45%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
+
     #first {
       text-align: left;
     }
+
     .team {
       display: flex;
       align-items: center;
-        #team {
+
+      #team {
         order: 2;
         width: 45%;
-        height:100%;
+        height: 45vw;
+        align-self: center;     
+
       }
+
       .text_2 {
         order: 1;
         width: 45%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 70%;
-      .coment {
-        margin-left: 0;
+        font-size: 95%;
+        .coment {
+          margin-left: 0;
+          padding-top: 0;
+        }
+
+        .link_container {
+          margin-left: 0;
+        }
       }
-      .link_container{
-        margin-left: 0;
-      }
-        
     }
+  
+    .pre-footer{
+      background-color: $desaturatedBlue;
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 0 30px;
+      padding: 5% 0 5% 5%;
+    }
+  
+    .content-wrap{
+      grid-column: 1/2;
+      grid-row: 1/2;        
+      text-align: justify;
+      align-self: center;
+      justify-self: center;
+
+      h3{
+          font-family: $relaway;
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin: 0 0 10px 0;
+          max-width: 300px;
+      }
+
+      p{
+          width: 70%;
+          margin: 0;
+      }
   }
+
+
+
+  form{
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding-left: 5%;
+      display: flex;
+      flex-direction: column ;
+      width: 80%;      
+  }
+
+  #email-field{
+      height: 40px;
+      width: 85%;
+      margin-bottom: 10px;
+      border: 0;
+      border-radius: 5px;
+      padding-left: 10px;
+      align-self: flex-start;
+  }
+
+  #submit{
+      font-family: $relaway;
+      font-weight: 700px;
+      height: 40px;
+      background-color: $buttomColor;
+      border: 0;
+      color: white;
+      font-weight: bold;
+      width: 60%;
+      border-radius: 5px;
+      align-self: flex-start;     
+  }
+
+  footer{
+      background-color: $veryDarkBlue;
+      padding: 0 5%;
+      display:grid;
+      color: white;
+      grid-template-columns: 1fr 1fr 1fr 1fr 120px;
+      grid-template-rows: 120px 250px;
+      gap: 0 30px;
+  }
+
+  .email h5 {
+      margin: 0;
+  }
+
+  .phone-number, .email{
+      display: flex;
+      align-items: center;
+  }
+
+  .number,.direction{
+      padding-left: 20px;
+      margin-left: 0;
+  }
+
+  .red{
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      margin:0 10px 0 10px; 
+  }
+
+  .logo-footer{
+      grid-column: 1/2;
+      grid-row: 1/2;
+      align-self: flex-end;             
+  }
+
+  .phone-email{
+      grid-column: 1/2;
+      grid-row: 2/3;
+  }
+
+  .bloque1{
+      grid-column: 2/3;;
+      grid-row: 2/3;
+      justify-self: center;     
+      padding-top: 0;
+  }
+
+  .bloque2{
+      grid-column: 3/4;
+      grid-row: 2/3;
+      justify-self: center;  
+      margin-top: 0;       
+  }
+  
+  .redes{
+      grid-column: 4/5;
+      grid-row: 2/3;
+      justify-self: center;
+                  
+  }
+
+  .bloque1 h5 , .bloque2 h5{
+      margin: 0px 0 10px 0;
+  }
+  }
+  
+  .curva-mobile{
+    display: none;
+   
+
+}
+.curva{
+    display: block;
 }
 }
